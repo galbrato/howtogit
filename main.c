@@ -24,8 +24,7 @@ double cos(double x){
 
 int main (int argc, char const *argv[]){
 		
-	printf("Ola mundo!!\n");		
-	printf("cos(3.14) = %lf\n", cos(3.14));
+	printf("cos(3.14) =  %lf\n", cos(3.14));
 
 	return 0;
 }

@@ -24,6 +24,13 @@ double cos(double x){
 
 int main (int argc, char const *argv[]){
 		
+	printf("Ola mundo!vai se fuder cartaz agora temq que dar conflito nessa merda porra
+			para que vc querme fuder nao para de mandar eu editar essa merda 
+			porra
+			porra
+			porra
+			porra
+			\n");		
 	printf("cos(3.14) =  %lf\n", cos(3.14));
 
 	return 0;

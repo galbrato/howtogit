@@ -1,0 +1,40 @@
+testando arquivo muito doido 
+
+
+git add arquivo.hue
+	adiciona oa rquivo ao conjunto de commit
+
+git status
+	msotra os status
+
+git commit
+	abre o vim e escreve o comentario do commit o que ele alterou e perta Esc e digita :wq para sair do vim e slavar e temrianr o comit
+
+git log
+	aparece todas os commit e suas hash table
+
+git revert rash
+	ele faz o contrario do commit passado pleo hash
+
+git show rash
+	mostra as modificaçoes do commit passado pelo hash
+
+git remote apelido https:/...
+	linka a pasta de tarbalho atual com uma pasta do github
+
+git push apelido master
+	ele manda 
+
+git pull apelido master 
+	para pegar as atualizaçoes do github apra pasta atual
+
+git branch nome-pessoa
+	cria um novo branch
+
+git checkout nome-dabranch
+	muda de branch
+
+git log --graph --all --abbrev-commit --decorate --oneline
+	para ver as branches e a arvore de commit
+
+

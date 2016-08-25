@@ -1,5 +1,7 @@
 testando arquivo muito doido 
 
+git init
+	inicializa a pasta com o git local
 
 git add arquivo.hue
 	adiciona oa rquivo ao conjunto de commit
@@ -19,7 +21,7 @@ git revert rash
 git show rash
 	mostra as modificaçoes do commit passado pelo hash
 
-git remote apelido https:/...
+git remote add apelido https:/...
 	linka a pasta de tarbalho atual com uma pasta do github
 
 git push apelido master
@@ -36,5 +38,11 @@ git checkout nome-dabranch
 
 git log --graph --all --abbrev-commit --decorate --oneline
 	para ver as branches e a arvore de commit
+
+git clone https:/..
+	clona uma pasta remota dado o endereco
+	
+git fetch
+	atualiza branch com o remoto
 
 

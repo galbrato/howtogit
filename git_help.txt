@@ -1,3 +1,5 @@
+Fernando Akio Tutume de Salles Pucci
+
 regra:
 	- 1 ninguem fala do howtogit
 	- 2 do trabalho em equipe no git: NÂO COMMITEM NA MASTER

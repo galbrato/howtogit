@@ -1,5 +1,4 @@
-Gabriel Simmel Nascimento
-Fernanda Tostes Marana
+Óliver =)
 regra:
 	- 1 ninguem fala do howtogit
 	- 2 do trabalho em equipe no git: NÂO COMMITEM NA MASTER

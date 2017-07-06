@@ -1,0 +1,80 @@
+Gabriel Simmel Nascimento
+regra:
+	- 1 ninguem fala do howtogit
+	- 2 do trabalho em equipe no git: NÂO COMMITEM NA MASTER
+	a nãos er que a galera queira gerar um release
+
+
+git init
+	- inicia o versionamento do git no repositorio atual, deve ser feito 1 vez apenas
+
+git status
+	- mostrar a branch atual
+	- listar todos os bumbum não salvos(ou modificados)
+	- listar todos os arquivos que foram adicionados para serem salvos no proximo commit usando comando "git add"
+
+git add <nome_do_arquivo>
+	- adiciona o "nome_do_arquivo" no proximo commit que sera feito, "preparando" o proximo commit
+
+git commit
+	- Salva as alterações adicionadas pelo comadno "git add" criando um novo commit
+	- ele ira abrir um editor de texto para voce comentar o commit
+	- outa versão é usar o :
+		git commit -m"<mensagem>"
+
+git log --graph --all --abbrev-commit --decorate --oneline
+	- Lista todos os commit como uma arvore decorada
+
+git show <Hash do commit que voce quer msotrar>
+	- Mostra os detalhes do commit
+	- Mostra e as diferenças entre tod
+
+git revert <Hash do ultimo commit que voce quer reverter>
+	- Ira reverter todas as coisas do commit passado por parametro(hash)
+	- ele cria um novo commit que sera o reverting
+
+git branch
+	- Listar todas as branchs e msotrar em qual voce esta
+
+git branch <nome_que_vc_quiser>
+	- ira cirar uma brnach com o nome apssado por parametro
+
+git checkout <nome_de_uma_branch_que_existe>
+	- voce ira mudar apra aquela branch
+	- voce tmabem pdoe apssar um rach de um commit por parametro e ira mudar a HEAD para ele
+
+git merge <nome_de_uma_branch>
+	- Ira gerar um novo commit nas branch atual, juntando todas as alterações da branch passada por parametro com a atual.
+
+comendos para escolher um arquivo em conflito durante um merging 
+git checkout --ours -- <filename>
+git checkout --theirs -- <filename>
+
+========================================
+
+vim .gitignore
+	Criar uma rquivo chamado .gitignore e litar dentro dele nomes de arquivos apr ao git ignorar de qualquer forma, não sera adicionado com add -A, nãos era comitado etc (usar igt ignore da unity)
+	
+git fetch
+	atualiza branch com o remoto
+	best comando
+
+git clone https:/..
+	clona uma pasta remota dado o endereco
+
+git remote add origin https:/...
+	linka a pasta de tarbalho atual com uma pasta do github
+
+git push origin <nome da branch que tu quer colocar no github>
+	ele manda 
+
+git pull origin <nome_da_branch_remota> 
+	- para pegar a branch remota "master" e baixa ela, se existir a branch master na locar, ele ira fazer um merge implicito
+	- equivalente :
+		git fetch
+		git merge origin/master
+
+como deletar todas as alterações feita atualmente
+	git stash
+	git stash drop
+obs: os dois em sequencia

@@ -1,25 +1,54 @@
-testando arquivo muito doido 
+regra:
+	- 1 ninguem fala do howtogit
+	- 2 do trabalho em equipe no git: NÂO COMMITEM NA MASTER
+	a nãos er que a galera queira gerar um release
+
 
 git init
-	inicializa a pasta com o git local
-
-git add arquivo.hue
-	adiciona oa rquivo ao conjunto de commit
+	- inicia o versionamento do git no repositorio atual, deve ser feito 1 vez apenas
 
 git status
-	msotra os status
+	- mostrar a branch atual
+	- listar todos os bumbum não salvos(ou modificados)
+	- listar todos os arquivos que foram adicionados para serem salvos no proximo commit usando comando "git add"
+
+git add <nome_do_arquivo>
+	- adiciona o "nome_do_arquivo" no proximo commit que sera feito, "preparando" o proximo commit
 
 git commit
-	abre o vim e escreve o comentario do commit o que ele alterou e perta Esc e digita :wq para sair do vim e slavar e temrianr o comit
+	- Salva as alterações adicionadas pelo comadno "git add" criando um novo commit
+	- ele ira abrir um editor de texto para voce comentar o commit
+	- outa versão é usar o :
+		git commit -m"<mensagem>"
 
-git log
-	aparece todas os commit e suas hash table
+git log --graph --all --abbrev-commit --decorate --oneline
+	- Lista todos os commit como uma arvore decorada
 
-git revert rash
-	ele faz o contrario do commit passado pleo hash
+git show <Hash do commit que voce quer msotrar>
+	- Mostra os detalhes do commit
+	- Mostra e as diferenças entre tod
 
-git show rash
-	mostra as modificaçoes do commit passado pelo hash
+git revert <Hash do ultimo commit que voce quer reverter>
+	- Ira reverter todas as coisas do commit passado por parametro(hash)
+	- ele cria um novo commit que sera o reverting
+
+git branch
+	- Listar todas as branchs e msotrar em qual voce esta
+
+git branch <nome_que_vc_quiser>
+	- ira cirar uma brnach com o nome apssado por parametro
+
+git checkout <nome_de_uma_branch_que_existe>
+	- voce ira mudar apra aquela branch
+
+git merge <nome_de_uma_branch>
+	- Ira gerar um novo commit nas branch atual, juntando todas as alterações da branch passada por parametro com a atual.
+
+comendos para escolher um arquivo em conflito durante um merging 
+git checkout --ours -- <filename>
+git checkout --theirs -- <filename>
+
+========================================
 
 git remote add apelido https:/...
 	linka a pasta de tarbalho atual com uma pasta do github
@@ -29,15 +58,6 @@ git push apelido master
 
 git pull apelido master 
 	para pegar as atualizaçoes do github apra pasta atual
-
-git branch nome-pessoa
-	cria um novo branch
-
-git checkout nome-dabranch
-	muda de branch
-
-git log --graph --all --abbrev-commit --decorate --oneline
-	para ver as branches e a arvore de commit
 
 git clone https:/..
 	clona uma pasta remota dado o endereco

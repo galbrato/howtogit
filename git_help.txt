@@ -1,6 +1,7 @@
 Gabriel Simmel Nascimento
 Fernando Akio Pucci
 Óliver =)
+Henrique Caetano Anraki
 
 regra:
 	- 1 ninguem fala do howtogit

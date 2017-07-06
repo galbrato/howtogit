@@ -1,4 +1,4 @@
-Fernando Akio Tutume de Salles Pucci
+Gabriel Simmel Nascimento
 
 regra:
 	- 1 ninguem fala do howtogit
@@ -42,6 +42,7 @@ git branch <nome_que_vc_quiser>
 
 git checkout <nome_de_uma_branch_que_existe>
 	- voce ira mudar apra aquela branch
+	- voce tmabem pdoe apssar um rach de um commit por parametro e ira mudar a HEAD para ele
 
 git merge <nome_de_uma_branch>
 	- Ira gerar um novo commit nas branch atual, juntando todas as alterações da branch passada por parametro com a atual.
@@ -52,19 +53,29 @@ git checkout --theirs -- <filename>
 
 ========================================
 
-git remote add apelido https:/...
-	linka a pasta de tarbalho atual com uma pasta do github
-
-git push apelido master
-	ele manda 
-
-git pull apelido master 
-	para pegar as atualizaçoes do github apra pasta atual
-
-git clone https:/..
-	clona uma pasta remota dado o endereco
+vim .gitignore
+	Criar uma rquivo chamado .gitignore e litar dentro dele nomes de arquivos apr ao git ignorar de qualquer forma, não sera adicionado com add -A, nãos era comitado etc (usar igt ignore da unity)
 	
 git fetch
 	atualiza branch com o remoto
+	best comando
 
+git clone https:/..
+	clona uma pasta remota dado o endereco
 
+git remote add origin https:/...
+	linka a pasta de tarbalho atual com uma pasta do github
+
+git push origin <nome da branch que tu quer colocar no github>
+	ele manda 
+
+git pull origin <nome_da_branch_remota> 
+	- para pegar a branch remota "master" e baixa ela, se existir a branch master na locar, ele ira fazer um merge implicito
+	- equivalente :
+		git fetch
+		git merge origin/master
+
+como deletar todas as alterações feita atualmente
+	git stash
+	git stash drop
+obs: os dois em sequencia

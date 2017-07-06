@@ -1,5 +1,6 @@
 Gabriel Simmel Nascimento
 Fernando Akio Pucci
+Óliver =)
 
 regra:
 	- 1 ninguem fala do howtogit
